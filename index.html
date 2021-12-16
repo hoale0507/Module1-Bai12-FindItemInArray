@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm giá trị trong mảng</title>
+</head>
+<body>
+<script>
+    let numbers = [1,2,3,4,5,6];
+    let value = prompt("Enter the number");
+    let isFound = false;
+    let index = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        if (value == numbers[i]) {
+            isFound = true;
+            index = i;
+        }
+    }
+    if(isFound == true) {
+        alert(value + " is found at " + index);
+    } else {
+        alert(value + "not found");
+    }
+
+</script>
+</body>
+</html>
